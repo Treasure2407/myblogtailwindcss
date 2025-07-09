@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>My Blog Page</title>
+</head>
+<body>
+
+    <nav class="bg-white border-b shadow-sm sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+    
+    <!-- Logo with image -->
+    <div class="flex items-center space-x-2">
+      <img src="./Assets/Blue_Logo_Design_30_1024x1024.webp" alt="Logo" class="h-8 w-8">
+      <h1 class="text-xl font-bold text-gray-800">MyBlog</h1>
+    </div>
+
+    <!-- Navigation links -->
+    <ul class="hidden md:flex space-x-6 text-gray-600">
+      <li><a href="#" class="hover:text-indigo-600">Home</a></li>
+      <li><a href="#" class="hover:text-indigo-600">Categories</a></li>
+      <li><a href="#" class="hover:text-indigo-600">About</a></li>
+      <li><a href="#" class="hover:text-indigo-600">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <!-- Navbar Component
+<nav class="bg-white border-b shadow-sm sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-gray-800">MyBlog</h1>
+    <ul class="hidden md:flex space-x-6 text-gray-600">
+      <li><a href="#" class="hover:text-indigo-600">Home</a></li>
+      <li><a href="#" class="hover:text-indigo-600">Categories</a></li>
+      <li><a href="#" class="hover:text-indigo-600">About</a></li>
+      <li><a href="#" class="hover:text-indigo-600">Contact</a></li>
+    </ul>
+  </div>
+</nav> -->
+
+<!-- Hero Section with Featured Post 
+<section class="bg-gradient-to-r from-indigo-500 to-blue-600 text-white py-16">
+  <div class="max-w-5xl mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-5xl font-bold mb-4">Welcome to My Blog</h2>
+    <p class="text-lg md:text-xl mb-6">Insights, stories, and tutorials on Web3 and beyond.</p>
+    <a href="#" class="inline-block bg-white text-indigo-600 px-6 py-2 rounded-full font-medium hover:bg-gray-100">Read Latest Post</a>
+  </div>
+</section> -->
+
+<!-- Hero Section with Featured Post -->
+<section class="relative bg-center bg-cover text-white py-24"> 
+  <div class="absolute inset-0 bg-indigo-800 bg-opacity-70"></div>
+
+  <div class="relative max-w-5xl mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-5xl font-bold mb-4">Welcome to My Blog</h2>
+    <p class="text-lg md:text-xl mb-6">Insights, stories, and tutorials on Web3 and beyond.</p>
+    <a href="#" class="inline-block bg-white text-indigo-600 px-6 py-2 rounded-full font-medium hover:bg-gray-100">
+      Read Latest Post
+    </a>
+  </div>
+</section>
+
+<!-- Blog Post Card Component -->
+<section class="py-12 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+      <img src="./Assets/christopher-gower-m_HRfLhgABo-unsplash.jpg" class="w-full h-48 object-cover" alt="Post image">
+      <div class="p-5">
+        <span class="text-sm text-indigo-500 font-medium">Web3</span>
+        <h3 class="mt-2 text-xl font-semibold text-gray-800">Understanding Smart Contracts.</h3>
+        <p class="mt-2 text-gray-600 text-sm">Smart contracts are digital agreements on the blockchain...</p>
+        <a href="#" class="text-indigo-600 mt-3 inline-block text-sm font-semibold hover:underline">Read more</a>
+      </div>
+    </div>
+    <!-- Repeat this card for more posts -->
+    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+      <img src="./Assets/hackernoon-tvYJNqq0I6A-unsplash.jpg" class="w-full h-48 object-cover" alt="Post image">
+      <div class="p-5">
+        <span class="text-sm text-indigo-500 font-medium">Blockchain</span>
+        <h3 class="mt-2 text-xl font-semibold text-gray-800">The Future of Decentralized Finance.</h3>
+        <p class="mt-2 text-gray-600 text-sm">DeFi is revolutionizing the financial industry...</p>
+        <a href="#" class="text-indigo-600 mt-3 inline-block text-sm font-semibold hover:underline">Read more</a>
+      </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+        <img src="./Assets/lauren-mancke-aOC7TSLb1o8-unsplash.jpg" class="w-full h-48 object-cover" alt="Post image">
+        <div class="p-5">
+          <span class="text-sm text-indigo-500 font-medium">NFTs</span>
+          <h3 class="mt-2 text-xl font-semibold text-gray-800">Exploring the World of Non-Fungible Tokens.</h3>
+          <p class="mt-2 text-gray-600 text-sm">NFTs are changing how we think about ownership...</p>
+          <a href="#" class="text-indigo-600 mt-3 inline-block text-sm font-semibold hover:underline">Read more</a>
+        </div>
+        </div>
+    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+      <img src="./Assets/luca-bravo-XJXWbfSo2f0-unsplash.jpg" class="w-full h-48 object-cover" alt="Post image">
+      <div class="p-5">
+        <span class="text-sm text-indigo-500 font-medium">Web3</span>
+        <h3 class="mt-2 text-xl font-semibold text-gray-800">Building Decentralized Applications.</h3>
+        <p class="mt-2 text-gray-600 text-sm">Learn how to create dApps on the blockchain...</p>
+        <a href="#" class="text-indigo-600 mt-3 inline-block text-sm font-semibold hover:underline">Read more</a>
+        </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+      <img src="./Assets/shubham-dhage-4DEn6KzRU6E-unsplash.jpg" class="w-full h-48 object-cover" alt="Post image">
+      <div class="p-5">
+        <span class="text-sm text-indigo-500 font-medium">Web3</span>
+        <h3 class="mt-2 text-xl font-semibold text-gray-800">Introduction to Blockchain.</h3>
+        <p class="mt-2 text-gray-600 text-sm">Learn how to create dApps on the blockchain...</p>
+        <a href="#" class="text-indigo-600 mt-3 inline-block text-sm font-semibold hover:underline">Read more</a>
+        </div>
+        </div>
+    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+      <img src="./Assets/shubham-dhage-zICnWNTJctI-unsplash.jpg" class="w-full h-48 object-cover" alt="Post image">
+      <div class="p-5">
+        <span class="text-sm text-indigo-500 font-medium">Web3</span>
+        <h3 class="mt-2 text-xl font-semibold text-gray-800">What is Cryptocurrency.</h3>
+        <p class="mt-2 text-gray-600 text-sm">Learn how to create dApps on the blockchain...</p>
+        <a href="#" class="text-indigo-600 mt-3 inline-block text-sm font-semibold hover:underline">Read more</a>
+        </div>
+        </div>
+        </div>
+</section>
+
+<!-- Author Footer Section -->
+<section class="bg-white py-10">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <img src="./Assets/IMG_20241016_111941_787.jpg" class="mx-auto rounded-full w-24 h-24 mb-4" alt="Author">
+    <h4 class="text-xl font-bold text-gray-800">John Deborah</h4>
+    <p class="text-sm text-gray-600 mb-2">Blockchain Educator & Web3 Writer</p>
+    <p class="text-gray-700">Passionate about decentralization and simplifying tech for everyday people. Let’s build the future of the web together.</p>
+  </div>
+</section>
+
+<!-- Footer Component -->
+<footer class="bg-gray-100 py-6 text-center text-gray-600 text-sm">
+  <p>&copy; 2025 MyBlog.</p>
+</footer>
+
+</body>
+</html>
